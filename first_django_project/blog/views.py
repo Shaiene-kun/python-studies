@@ -5,11 +5,11 @@ from .models import Post
 # Class views
 class HomeView(ListView):
     model = Post
-    template_name = "home.html"
+    template_name = "posts/home.html"
 
 class ArticleView(DetailView):
     model = Post
-    template_name = "article-detail.html"
+    template_name = "posts/article-detail.html"
 
 def base(request):
     return render(request,'base/base.html',{})
