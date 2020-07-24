@@ -1,6 +1,11 @@
 {% extends 'base/base.html'%}
 {% block content%}
+
         <h1 class="title" >Posts</h1>
+        <a href="{% url 'blog:postForm'%}">
+            <button class="btn btn-sm btn-outline-light" > Write a new post </button>
+        </a>
+
         <div class="container-fluid">
             <div class="row">
                     
